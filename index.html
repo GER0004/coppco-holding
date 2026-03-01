@@ -53,18 +53,25 @@ section p{
 }
 
 .card{
-    background:#FFFFFF;
-    border:1px solid #E4E8EB;
-    border-radius:16px;
-    padding:40px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.04);
-    transition:0.3s ease;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #E4E8EB;
+    border-radius:0;
+    padding:32px 0;
+    box-shadow:none;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.card h3{
+    margin-bottom:10px;
+    font-size:22px;
+    font-weight:600;
 }
 
+.card p{
+    margin:0;
+    color:#6B7682;
+    font-size:16px;
+}
 h1{
   font-size:54px;
   font-weight:600;
@@ -76,7 +83,7 @@ h2{
   font-weight:600;
   margin-bottom:25px;
 }
-
+<div class="section-divider"></div>
 p{
   color:var(--muted);
   font-size:16px;
