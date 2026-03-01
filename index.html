@@ -44,7 +44,7 @@ body{
 }
 
 section{
-  padding:80px 0;
+  padding:100px 0;
 }
 
 section p{
@@ -316,6 +316,17 @@ h2::after{
     line-height:1.2;
   }
 }
+  /* Animation */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:all 0.6s ease;
+}
+
+.fade-in.visible{
+  opacity:1;
+  transform:translateY(0);
+}
 </style>
 </head>
 
@@ -397,7 +408,7 @@ A material of technological conductivity. Ultra-high purity copper enables effic
 
 <h2 style="margin-bottom:30px;">Quality System & Storage</h2>
 
-<p style="max-width:850px; margin-bottom:60px; color:#64748b;">
+<p style="max-width:850px; margin-bottom:60px; color:#475569;">
 Industrial assets are governed by structured verification and custodial protocols designed to ensure long-term integrity, traceability and capital reliability.
 </p>
 
@@ -566,6 +577,20 @@ Head office location — London, United Kingdom.
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+});
 
+document.querySelectorAll('section').forEach(sec=>{
+  sec.classList.add('fade-in');
+  observer.observe(sec);
+});
+</script>
+  
 </body>
 </html>
