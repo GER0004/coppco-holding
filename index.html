@@ -366,6 +366,36 @@ h2::after{
     gap:6px;
     font-weight:500;
 }
+  .toggle-btn{
+  margin-top:20px;
+  padding:10px 20px;
+  background:transparent;
+  border:1px solid var(--navy);
+  color:var(--navy);
+  cursor:pointer;
+  border-radius:4px;
+  font-size:14px;
+  transition:all 0.3s ease;
+}
+
+.toggle-btn:hover{
+  background:var(--navy);
+  color:white;
+}
+
+.technical-details{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  margin-top:15px;
+}
+
+.technical-details ul{
+  padding-left:18px;
+  line-height:1.6;
+  color:var(--muted);
+  font-size:14px;
+}
 </style>
 </head>
 
@@ -433,10 +463,24 @@ The holding’s industrial assets are not merely commodities. They represent a s
 <div class="grid">
 
 <div class="card">
+
 <h3>Nickel Wire 99.94%</h3>
+
 <p>
 A material of structural discipline. High purity and consistency establish industrial reliability and engineering precision.
 </p>
+
+<button class="toggle-btn">Technical Overview</button>
+
+<div class="technical-details">
+  <ul>
+    <li><strong>Diameter:</strong> 0.025 mm (25 µm)</li>
+    <li><strong>Grade:</strong> NP1 / ASTM Nickel 200 (UNS N02200)</li>
+    <li><strong>Melting Point:</strong> 1455°C</li>
+    <li><strong>Applications:</strong> Aerospace electronics, RF systems, MEMS, quantum and cryogenic technologies.</li>
+  </ul>
+</div>
+
 </div>
 
 <div class="card">
@@ -637,6 +681,17 @@ document.querySelectorAll('section').forEach(sec=>{
   observer.observe(sec);
 });
 </script>
-  
+  <script>
+document.querySelectorAll('.toggle-btn').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    const details = button.nextElementSibling;
+    if(details.style.maxHeight){
+      details.style.maxHeight = null;
+    } else {
+      details.style.maxHeight = details.scrollHeight + "px";
+    }
+  });
+});
+</script>
 </body>
 </html>
