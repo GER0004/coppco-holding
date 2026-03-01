@@ -229,7 +229,56 @@ footer{
   text-align:center;
   color:var(--muted);
 }
+/* ===== Subtle Engineering Grid (Hero) ===== */
 
+.hero{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image:
+    linear-gradient(to right, rgba(10,31,60,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10,31,60,0.04) 1px, transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+}
+
+/* ===== Gold Accent Line ===== */
+
+h2::after{
+  content:"";
+  display:block;
+  width:60px;
+  height:2px;
+  background:var(--gold);
+  margin-top:15px;
+}
+
+/* ===== Biotech Soft Glow ===== */
+
+.biotech-section{
+  position:relative;
+  background:var(--light);
+}
+
+.biotech-section::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(10,31,60,0.05) 0%, transparent 70%);
+  top:-200px;
+  right:-200px;
+  pointer-events:none;
+}
+  
 </style>
 </head>
 
