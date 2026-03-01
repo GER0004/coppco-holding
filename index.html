@@ -186,7 +186,13 @@ header{
 .contact{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:60px;
+  gap:80px;
+}
+
+@media(max-width:900px){
+  .contact{
+    grid-template-columns:1fr;
+  }
 }
 
 iframe{
@@ -364,25 +370,70 @@ The international PCT patent framework covers genetic engineering methodologies,
 </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="background:#f8fbff;">
 <div class="container">
-<h2>Contact</h2>
+
+<h2 style="margin-bottom:60px;">Headquarters</h2>
 
 <div class="contact">
 
 <div>
-<p>3-5 St John St, London EC1M 4AA</p>
-<p>+44 (0) 20 3535 6471</p>
+
+<h3 style="margin-bottom:15px; font-size:18px; letter-spacing:1px; text-transform:uppercase; color:#0a1f3c;">
+London Office
+</h3>
+
+<p style="margin-bottom:8px;">
+3-5 St John St<br>
+London EC1M 4AA<br>
+United Kingdom
+</p>
+
+<p style="margin-bottom:8px;">
+T: +44 (0) 20 3535 6471
+</p>
+
+<p style="margin-bottom:30px;">
+E: info@coppcoholding.com
+</p>
+
+<p style="font-size:14px; color:#64748b;">
+COPPCO HOLDING LIMITED operates as a strategic global holding integrating industrial and biotechnology assets.
+</p>
+
 </div>
 
-<form>
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Message"></textarea>
-<button type="submit">Send</button>
+<div>
+
+<iframe 
+  src="https://maps.google.com/maps?q=3-5%20St%20John%20St%20London&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  loading="lazy">
+</iframe>
+
+<p style="margin-top:10px; font-size:13px; color:#64748b;">
+Head office location — London, United Kingdom.
+</p>
+
+</div>
+
+</div>
+
+<div style="margin-top:100px; border-top:1px solid #e2e8f0; padding-top:60px;">
+
+<h2 style="margin-bottom:40px;">Institutional Inquiry</h2>
+
+<form style="max-width:600px;">
+
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Corporate Email">
+<textarea rows="5" placeholder="Inquiry Details"></textarea>
+
+<button type="submit">Submit Inquiry</button>
+
 </form>
 
 </div>
+
 </div>
 </section>
 
