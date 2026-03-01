@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COPPCO HOLDING LIMITED</title>
 
-<!-- Premium font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
-  --accent:#0b1f3a;
-  --accent-2:#163a6b;
-  --text:#0f172a;
+  --navy:#0c1f3f;
+  --gold:#b89a4a;
+  --text:#111827;
   --muted:#6b7280;
   --line:#e5e7eb;
   --bg:#ffffff;
@@ -24,53 +24,83 @@ body{
   font-family:'Inter',sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.65;
+  line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
 
-.container{width:92%;max-width:1240px;margin:auto}
+.container{
+  width:92%;
+  max-width:1200px;
+  margin:auto;
+}
+
 section{padding:120px 0}
 
-h1,h2,h3{font-weight:600;letter-spacing:-0.02em}
-h1{font-size:48px}
-h2{font-size:32px}
-h3{font-size:20px}
-p{color:var(--muted)}
-
-.btn{
-  display:inline-block;
-  padding:14px 38px;
-  background:var(--accent);
-  color:#fff;
-  text-decoration:none;
-  border-radius:4px;
-  transition:.35s cubic-bezier(.4,0,.2,1);
-}
-.btn:hover{background:var(--accent-2);transform:translateY(-2px)}
+h1{font-size:48px;font-weight:600;letter-spacing:-1px}
+h2{font-size:32px;font-weight:600;margin-bottom:20px}
+h3{font-size:20px;font-weight:600;margin-bottom:10px}
+p{color:var(--muted);max-width:820px}
 
 header{
-  position:fixed;top:0;width:100%;
-  background:rgba(255,255,255,.8);
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(255,255,255,0.85);
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
   z-index:1000;
 }
+
 .header-inner{
-  display:flex;justify-content:space-between;align-items:center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   padding:22px 0;
 }
-.logo{font-weight:600;font-size:14px;letter-spacing:.15em}
+
+.logo{
+  font-size:14px;
+  letter-spacing:2px;
+  font-weight:600;
+}
+
 .lang{
-  font-size:13px;cursor:pointer;color:var(--accent);
+  cursor:pointer;
+  font-size:13px;
+  color:var(--navy);
   font-weight:500;
 }
 
-.hero{padding-top:200px;text-align:center}
-.hero p{max-width:820px;margin:25px auto 0;font-size:18px}
-.hero .btn{margin-top:45px}
+.hero{
+  padding-top:220px;
+  text-align:center;
+}
+
+.hero p{
+  margin:30px auto 0;
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:50px;
+  padding:14px 40px;
+  background:var(--navy);
+  color:#fff;
+  text-decoration:none;
+  border-radius:4px;
+  transition:.35s;
+}
+
+.btn:hover{
+  background:var(--gold);
+  color:#fff;
+}
 
 .divider{
-  width:60px;height:2px;background:var(--accent);
+  width:60px;
+  height:2px;
+  background:var(--gold);
   margin:30px 0;
 }
 
@@ -78,70 +108,64 @@ header{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   gap:60px;
-  margin-top:70px;
+  margin-top:60px;
 }
 
 .card{
-  padding:50px;
+  padding:40px;
   border:1px solid var(--line);
-  border-radius:8px;
-  transition:.5s cubic-bezier(.4,0,.2,1);
-  background:#fff;
+  border-radius:6px;
+  transition:.4s;
 }
+
 .card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 25px 60px rgba(0,0,0,.06);
+  transform:translateY(-8px);
+  box-shadow:0 25px 60px rgba(0,0,0,0.05);
 }
 
-.light{background:#fafbfc}
-
-.metrics{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:40px;
-  margin-top:60px;
-}
-.metric{
-  text-align:center;
-}
-.metric strong{
-  display:block;
-  font-size:28px;
-  color:var(--accent);
+.light{
+  background:#fafafa;
 }
 
-.contact-grid{
+.contact{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:60px;
-  margin-top:70px;
+  margin-top:60px;
 }
+
 iframe{
-  width:100%;height:260px;border:0;border-radius:8px;
+  width:100%;
+  height:260px;
+  border:0;
+  border-radius:6px;
 }
 
 form input,form textarea{
   width:100%;
-  padding:15px;
-  border:1px solid var(--line);
+  padding:14px;
   margin-bottom:18px;
+  border:1px solid var(--line);
   border-radius:4px;
-  font-size:14px;
 }
+
 form button{
-  padding:14px 36px;
-  border:none;
-  background:var(--accent);
+  padding:14px 40px;
+  background:var(--navy);
   color:#fff;
+  border:none;
   border-radius:4px;
   cursor:pointer;
   transition:.3s;
 }
-form button:hover{background:var(--accent-2)}
+
+form button:hover{
+  background:var(--gold);
+}
 
 footer{
-  border-top:1px solid var(--line);
   padding:40px 0;
+  border-top:1px solid var(--line);
   text-align:center;
   font-size:14px;
   color:var(--muted);
@@ -150,8 +174,9 @@ footer{
 .fade{
   opacity:0;
   transform:translateY(40px);
-  transition:1s cubic-bezier(.4,0,.2,1);
+  transition:1s;
 }
+
 .fade.show{
   opacity:1;
   transform:translateY(0);
@@ -159,9 +184,10 @@ footer{
 
 @media(max-width:900px){
   h1{font-size:32px}
-  section{padding:90px 0}
-  .contact-grid{grid-template-columns:1fr}
+  section{padding:80px 0}
+  .contact{grid-template-columns:1fr}
 }
+
 </style>
 </head>
 
@@ -176,90 +202,69 @@ footer{
 
 <section class="hero fade">
 <div class="container">
-<h1 data-ru="Стратегический холдинг нового поколения"
-    data-en="Next-Generation Strategic Holding">
-Стратегический холдинг нового поколения
+<h1 data-ru="Структурированный капитал. Индустриальная точность. Регенеративный интеллект."
+    data-en="Structured Capital. Industrial Precision. Regenerative Intelligence.">
+Структурированный капитал. Индустриальная точность. Регенеративный интеллект.
 </h1>
 
-<p data-ru="Интеграция металлургии высокой чистоты и биотехнологических платформ. Качество, подтверждённое на уровне молекулы."
-   data-en="Integration of high-purity metallurgy and advanced biotech platforms. Quality validated at the molecular level.">
-Интеграция металлургии высокой чистоты и биотехнологических платформ. Качество, подтверждённое на уровне молекулы.
+<p data-ru="Лондонский стратегический холдинг глобального уровня, интегрирующий индустриальные активы высокой чистоты и патентно-защищённые биотехнологические разработки."
+   data-en="A London-based global strategic holding integrating high-purity industrial assets and patent-secured biotechnology platforms.">
+Лондонский стратегический холдинг глобального уровня, интегрирующий индустриальные активы высокой чистоты и патентно-защищённые биотехнологические разработки.
 </p>
 
 <a href="#contact" class="btn"
    data-ru="Обсудить партнёрство"
    data-en="Discuss Partnership">Обсудить партнёрство</a>
+
 </div>
 </section>
 
 <section class="fade">
 <div class="container">
-<h2>Металлургическая экспертиза</h2>
+<h2>Индустриальная активная база</h2>
 <div class="divider"></div>
 
 <div class="grid">
-
 <div class="card">
-<h3>Никелевая проволока 99.94%</h3>
-<p>Промышленная никелевая проволока высокой чистоты. Стабильные поставки, международные стандарты, независимая сертификация (включая IGAS).</p>
-</div>
-
-<div class="card">
-<h3>Медный порошок 99.998%</h3>
-<p>Ультрачистый порошок для аддитивных технологий, микроэлектроники и специальных сплавов. Контроль параметров на каждом этапе производства.</p>
+<h3>Никелевая проволока 99,94%</h3>
+<p>Промышленный материал с контролируемыми характеристиками и стабильным качеством.</p>
 </div>
 
 <div class="card">
-<h3>Контроль качества</h3>
-<p>Каждая партия проходит лабораторную проверку, подтверждение характеристик и трассируемость происхождения.</p>
+<h3>Медный порошок 99,998%</h3>
+<p>Ультрачистый материал для высокотехнологичных и аддитивных применений.</p>
 </div>
 
+<div class="card">
+<h3>Структурирование капитала</h3>
+<p>Индустриальные активы формируют материальный фундамент стратегического партнёрства.</p>
 </div>
+</div>
+
 </div>
 </section>
 
 <section class="light fade">
 <div class="container">
-<h2>Regulina™ / RGN-T1™ Platform</h2>
+<h2>RGN-T1™ Regenerative Platform</h2>
 <div class="divider"></div>
 
 <p>
-Restoring Innate Biological Order. Платформа направлена на регенерацию тимуса и системную иммунную регуляцию.
-RGN-T1™ — рекомбинантная форма человеческого белка SMP30 / Regucalcin.
+Патентно-защищённая рекомбинантная платформа на основе SMP30 / Regucalcin, развиваемая в рамках структурированной доклинической программы с лабораторной производственной фазой в Великобритании.
 </p>
-
-<div class="metrics">
-<div class="metric">
-<strong>≥ 98–99%</strong>
-Purity
-</div>
-<div class="metric">
-<strong>≥ 95%</strong>
-Monomer Content
-</div>
-<div class="metric">
-<strong>≤ 0.1 EU/µg</strong>
-Endotoxin
-</div>
-<div class="metric">
-<strong>GMP</strong>
-Scalable Process
-</div>
-</div>
 
 </div>
 </section>
 
 <section id="contact" class="fade">
 <div class="container">
-<h2>Партнёрство и стратегические поставки</h2>
+<h2>Глобальное партнёрство</h2>
 <div class="divider"></div>
 
-<div class="contact-grid">
+<div class="contact">
 <div>
 <p>📍 3-5 St John St, London EC1M 4AA</p>
 <p>📞 +44 (0) 20 3535 6471</p>
-
 <iframe src="https://maps.google.com/maps?q=3-5%20St%20John%20St%20London&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
@@ -270,11 +275,12 @@ Scalable Process
 <button type="submit">Отправить</button>
 </form>
 </div>
+
 </div>
 </section>
 
 <footer>
-© <span id="year"></span> COPPCO HOLDING LIMITED. Strategic Holding Structure.
+© <span id="year"></span> COPPCO HOLDING LIMITED. Strategic Global Holding Structure.
 </footer>
 
 <script>
