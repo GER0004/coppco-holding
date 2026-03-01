@@ -396,6 +396,42 @@ h2::after{
   color:var(--muted);
   font-size:14px;
 }
+  /* --- Premium Expanded State --- */
+
+.card{
+  margin-bottom:30px;
+  transition:all 0.3s ease;
+}
+
+.card.open{
+  background:#f8fbff;
+  border:1px solid rgba(10,31,60,0.08);
+  box-shadow:0 15px 45px rgba(10,31,60,0.08);
+}
+
+.technical-details{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  margin-top:20px;
+  padding:0;
+}
+
+.card.open .technical-details{
+  padding:20px 0 5px 0;
+}
+
+.technical-details ul{
+  padding-left:20px;
+  line-height:1.7;
+  color:#475569;
+  font-size:14px;
+}
+
+.technical-details p{
+  color:#475569;
+  font-size:14px;
+}
 </style>
 </head>
 
@@ -718,11 +754,15 @@ document.querySelectorAll('section').forEach(sec=>{
   <script>
 document.querySelectorAll('.toggle-btn').forEach(button=>{
   button.addEventListener('click', ()=>{
+    const card = button.closest('.card');
     const details = button.nextElementSibling;
+
     if(details.style.maxHeight){
       details.style.maxHeight = null;
+      card.classList.remove('open');
     } else {
       details.style.maxHeight = details.scrollHeight + "px";
+      card.classList.add('open');
     }
   });
 });
