@@ -1013,17 +1013,18 @@ Head office location — London, United Kingdom.
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <script>
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
     }
   });
+}, {
+  threshold: 0.2
 });
 
-document.querySelectorAll('section').forEach(sec=>{
-  sec.classList.add('fade-in');
-  observer.observe(sec);
+document.querySelectorAll(".fade-in").forEach(el => {
+  observer.observe(el);
 });
 </script>
   <script>
