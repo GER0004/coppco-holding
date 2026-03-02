@@ -667,12 +667,13 @@ h2::after{
 }
   /* METRIC ANIMATION */
 .metric-card {
-  transition: all 0.6s ease;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(10,31,60,0.08);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
 }
 
-.metric-card:hover {
-  transform: translateY(-4px);
-}
 
 .metric-card.visible {
   opacity: 1;
@@ -712,15 +713,22 @@ h2::after{
   line-height: 1.6;
 }
 
-/* Золотая линия сверху */
-.metric-card::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: linear-gradient(90deg, #b89a4a, #d4b768);
-  margin-bottom: 20px;
-  border-radius: 2px;
+.metric-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.metric-card p {
+  font-size: 16px;
+  color: #6b7684;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+  .metric-strip {
+  padding: 100px 0;
+  background: #f5f7fa;
 }
   @media (max-width: 768px) {
 
