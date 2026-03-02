@@ -29,13 +29,27 @@ html, body{
 
 *{margin:0;padding:0;box-sizing:border-box}
 
-body{
-    margin:0;
-    padding:0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background:#F5F7F8;
-    color:#1C1F24;
-    overflow-x:hidden;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f4f6f9 0%,
+    #eef2f7 50%,
+    #f8fafc 100%
+  );
+}
+  body::before {
+  content: "";
+  position: fixed;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200,210,230,0.3), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 .container {
     width: 90%;
