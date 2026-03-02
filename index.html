@@ -104,17 +104,19 @@ header{
 }
 
 .hero {
-  padding: 140px 0 100px;
-  background: url('hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   position: relative;
   color: white;
+  background: url('hero.jpg') center center / cover no-repeat;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(10,31,60,0.75);
+  background: linear-gradient(90deg, rgba(10,31,60,0.85) 0%, rgba(10,31,60,0.6) 40%, rgba(10,31,60,0.2) 100%);
 }
 
 .hero .container {
@@ -469,6 +471,7 @@ h2::after{
 </header>
 
 <section class="hero">
+  <div class="hero-overlay">
     <div class="hero-content">
       <h1>A Next-Generation<br>Global Strategic Holding</h1>
       <p>
@@ -479,7 +482,15 @@ h2::after{
     </div>
   </div>
 
-
+<div class="metric-strip">
+<div class="pillar">
+<h3>Industrial Assets</h3>
+  <div class="section-divider"></div>
+<p class="asset-lines">
+    <span>Nickel Wire 99.978%</span>
+    <span>Copper Powder 99.9998%</span>
+</p>
+</div>
 
 <div class="pillar">
 <h3>PCT Protection</h3>
@@ -503,15 +514,7 @@ h2::after{
 
 </div>
 </section>
-<div class="metric-strip">
-<div class="pillar">
-<h3>Industrial Assets</h3>
-  <div class="section-divider"></div>
-<p class="asset-lines">
-    <span>Nickel Wire 99.978%</span>
-    <span>Copper Powder 99.9998%</span>
-</p>
-</div>
+
 <section>
 <div class="container">
 <h2>Industrial Architecture</h2>
