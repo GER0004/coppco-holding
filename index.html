@@ -513,6 +513,75 @@ h2::after{
     background: linear-gradient(to bottom, #c8a44f, #e6c77a);
     border-radius: 4px;
 }
+  /* ===== CORPORATE ROADMAP ===== */
+
+.roadmap-corp {
+  margin-top: 120px;
+  position: relative;
+  padding-left: 90px;
+}
+
+.roadmap-corp::before {
+  content: "";
+  position: absolute;
+  left: 44px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #2f5fa7;
+  border-radius: 2px;
+}
+
+.roadmap-step {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.roadmap-marker {
+  position: absolute;
+  left: -90px;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(145deg,#f3d77a,#c9a227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.roadmap-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+}
+
+.roadmap-content p {
+  margin: 0;
+  color: #6c7a89;
+  font-size: 16px;
+}
+
+.roadmap-divider {
+  height: 1px;
+  background: #e4e7eb;
+  margin-top: 25px;
+}
+
+@media(max-width:768px){
+  .roadmap-corp {
+    padding-left: 70px;
+  }
+  .roadmap-marker {
+    left: -70px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
 </style>
 </head>
 
@@ -715,22 +784,42 @@ The international PCT patent framework covers genetic engineering methodologies,
 <div class="container">
 <h2>Strategic Development Roadmap</h2>
 
-<div class="roadmap">
-<div class="roadmap-line"></div>
+  <div class="roadmap-step">
+    <div class="roadmap-marker">I</div>
+    <div class="roadmap-content">
+      <h3>Stage I</h3>
+      <p>Laboratory Validation</p>
+      <div class="roadmap-divider"></div>
+    </div>
+  </div>
 
-<div class="roadmap-items">
+  <div class="roadmap-step">
+    <div class="roadmap-marker">II</div>
+    <div class="roadmap-content">
+      <h3>Stage II</h3>
+      <p>Preclinical Expansion</p>
+      <div class="roadmap-divider"></div>
+    </div>
+  </div>
 
-<div class="roadmap-item">
-<div class="roadmap-dot"></div>
-<h4>Stage I</h4>
-<p>Laboratory Validation</p>
-</div>
+  <div class="roadmap-step">
+    <div class="roadmap-marker">III</div>
+    <div class="roadmap-content">
+      <h3>Stage III</h3>
+      <p>GMP Alignment</p>
+      <div class="roadmap-divider"></div>
+    </div>
+  </div>
 
-<div class="roadmap-item">
-<div class="roadmap-dot"></div>
-<h4>Stage II</h4>
-<p>Preclinical Expansion</p>
-</div>
+  <div class="roadmap-step">
+    <div class="roadmap-marker">IV</div>
+    <div class="roadmap-content">
+      <h3>Stage IV</h3>
+      <p>Clinical Partnership</p>
+    </div>
+  </div>
+
+</section>
 
 <div class="roadmap-item">
 <div class="roadmap-dot"></div>
