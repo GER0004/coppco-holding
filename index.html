@@ -491,6 +491,28 @@ h2::after{
   color:#475569;
   font-size:14px;
 }
+  /* FINAL PILLAR FIX */
+
+.pillar {
+    background: #ffffff;
+    padding: 35px 40px 35px 80px !important;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(10,31,60,0.06);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.pillar::before {
+    content: "";
+    position: absolute;
+    left: 45px !important;
+    top: 25px;
+    bottom: 25px;
+    width: 4px;
+    background: linear-gradient(to bottom, #c8a44f, #e6c77a);
+    border-radius: 4px;
+}
 </style>
 </head>
 
