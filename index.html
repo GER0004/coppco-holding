@@ -513,18 +513,17 @@ h2::after{
     background: linear-gradient(to bottom, #c8a44f, #e6c77a);
     border-radius: 4px;
 }
- /* ===== MINIMALIST ROADMAP FIXED ===== */
+ /* ===== CLEAN PROFESSIONAL ROADMAP ===== */
 
 .roadmap-minimal {
   margin-top: 120px;
   position: relative;
-  padding-left: 60px;
 }
 
 .roadmap-minimal::before {
   content: "";
   position: absolute;
-  left: 24px;
+  left: 20px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -532,35 +531,30 @@ h2::after{
 }
 
 .roadmap-minimal-item {
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .roadmap-minimal-dot {
-  position: absolute;
-  left: 16px;
-  top: 6px;
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   background: #d4af37;
   border-radius: 50%;
+  margin-top: 6px;
 }
 
-.roadmap-minimal h3 {
+.roadmap-content h3 {
   margin: 0 0 6px 0;
   font-size: 22px;
 }
 
-.roadmap-minimal p {
+.roadmap-content p {
   margin: 0;
   color: #6c7a89;
   font-size: 16px;
-}
-
-@media(max-width:768px){
-  .roadmap-minimal {
-    padding-left: 55px;
-  }
 }
 </style>
 </head>
@@ -768,27 +762,35 @@ The international PCT patent framework covers genetic engineering methodologies,
 
   <div class="roadmap-minimal-item">
     <div class="roadmap-minimal-dot"></div>
+     <div class="roadmap-content">
     <h3>Stage I</h3>
     <p>Laboratory Validation</p>
   </div>
+    </div>
 
   <div class="roadmap-minimal-item">
     <div class="roadmap-minimal-dot"></div>
+     <div class="roadmap-content">
     <h3>Stage II</h3>
     <p>Preclinical Expansion</p>
   </div>
+    </div>
 
   <div class="roadmap-minimal-item">
     <div class="roadmap-minimal-dot"></div>
+     <div class="roadmap-content">
     <h3>Stage III</h3>
     <p>GMP Alignment</p>
   </div>
+    </div>
 
   <div class="roadmap-minimal-item">
     <div class="roadmap-minimal-dot"></div>
+     <div class="roadmap-content">
     <h3>Stage IV</h3>
     <p>Clinical Partnership</p>
   </div>
+    </div>
 
 </div>
 </section>
