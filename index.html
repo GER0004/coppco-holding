@@ -104,10 +104,22 @@ header{
 }
 
 .hero {
-    padding: 160px 0 140px;
-    background: url('hero.jpg') center/cover no-repeat;
-    position: relative;
-    color: white;
+  position: relative;
+  padding: 180px 20px;
+  text-align: center;
+  background: url('hero-bg.jpg') center center / cover no-repeat;
+  color: white;
+}
+  .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 15, 30, 0.65);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero::after {
@@ -123,13 +135,13 @@ header{
 }
 
 .hero h1 {
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 700;
-  letter-spacing: -1.5px;
-  color: #0f172a;
-  margin-bottom: 28px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 24px;
 }
-}
+
   .hero-btn {
     display: inline-block;
     margin-top: 25px;
@@ -148,11 +160,9 @@ header{
 
 .hero p {
   font-size: 22px;
-  color: #64748b;
-  margin-bottom: 50px;
+  color: rgba(255,255,255,0.85);
   max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 40px;
 }
   @media (max-width: 768px) {
   .hero h1 {
