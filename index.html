@@ -644,16 +644,24 @@ h2::after{
   background: linear-gradient(90deg, #0f172a, transparent);
   opacity: 0.15;
 }
+  .site-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.site-logo {
+  height: 52px;
+  object-fit: contain;
+}
 </style>
 </head>
 
 <body>
-
-<header>
-<div class="container header-inner">
-<div class="logo">COPPCO HOLDING LIMITED</div>
-</div>
+  <header class="site-header">
+  <img src="logo.png" alt="COPPCO Holding" class="site-logo">
 </header>
+
 
 <section class="hero">
   <div class="hero-overlay">
