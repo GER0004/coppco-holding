@@ -167,22 +167,61 @@ header{
 
 /* METRICS */
 
-.metric-strip{
-  margin-top:100px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:40px;
-  padding-top:60px;
-  border-top:1px solid var(--line);
+.metric-strip {
+    padding: 120px 0;
+    background: #f8f9fb;
 }
-  @media(max-width:768px){
 
-  .metric-strip{
-    margin-top:50px;
-    padding-top:30px;
-    gap:20px;
-  }
+.metric-strip .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.pillar {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 30px 35px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(10,31,60,0.06);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.pillar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 4px;
+    background: linear-gradient(to bottom, #c8a44f, #e6c77a);
+    border-radius: 4px;
+}
+
+.pillar:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px rgba(10,31,60,0.12);
+}
+
+.pillar-number {
+    font-size: 18px;
+    color: #a0a8b5;
+    min-width: 35px;
+    margin-top: 3px;
+}
+
+.pillar h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.pillar p {
+    margin: 4px 0;
+    color: #6c7a8c;
+}
   .pillar{
     padding:20px 0;
   }
@@ -485,38 +524,43 @@ h2::after{
   </div>
   </section>
 
-<div class="metric-strip">
-   <div class="container">
-       <div class="pillar">
-<h3>Industrial Assets</h3>
-  <div class="section-divider"></div>
-<p class="asset-lines">
-    <span>Nickel Wire 99.978%</span>
-    <span>Copper Powder 99.9998%</span>
-</p>
-</div>
+<section class="metric-strip">
+  <div class="container">
 
-<div class="pillar">
-<h3>PCT Protection</h3>
-  <div class="section-divider"></div>
-<p>International Patent Strategy</p>
-</div>
+    <div class="pillar">
+      <span class="pillar-number">01</span>
+      <div class="pillar-content">
+        <h3>Industrial Assets</h3>
+        <p>Nickel Wire 99.978%</p>
+        <p>Copper Powder 99.9998%</p>
+      </div>
+    </div>
 
-<div class="pillar">
-<h3>Structured Capital</h3>
-  <div class="section-divider"></div>
-<p>Asset-Backed Investment Architecture</p>
-</div>
+    <div class="pillar">
+      <span class="pillar-number">02</span>
+      <div class="pillar-content">
+        <h3>PCT Protection</h3>
+        <p>International Patent Strategy</p>
+      </div>
+    </div>
 
-<div class="pillar">
-<h3>Global Vision</h3>
-  <div class="section-divider"></div>
-<p>Industrial & Biotechnology Integration</p>
-</div>
+    <div class="pillar">
+      <span class="pillar-number">03</span>
+      <div class="pillar-content">
+        <h3>Structured Capital</h3>
+        <p>Asset-Backed Investment Architecture</p>
+      </div>
+    </div>
 
-</div>
+    <div class="pillar">
+      <span class="pillar-number">04</span>
+      <div class="pillar-content">
+        <h3>Global Vision</h3>
+        <p>Industrial & Biotechnology Integration</p>
+      </div>
+    </div>
 
-</div>
+  </div>
 </section>
 
 <section>
