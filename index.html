@@ -513,73 +513,56 @@ h2::after{
     background: linear-gradient(to bottom, #c8a44f, #e6c77a);
     border-radius: 4px;
 }
-  /* ===== CORPORATE ROADMAP ===== */
+  /* ===== MINIMALIST ROADMAP ===== */
 
-.roadmap-corp {
+.roadmap-minimal {
   margin-top: 120px;
   position: relative;
-  padding-left: 90px;
+  padding-left: 70px;
 }
 
-.roadmap-corp::before {
+.roadmap-minimal::before {
   content: "";
   position: absolute;
-  left: 44px;
+  left: 30px;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: #2f5fa7;
-  border-radius: 2px;
+  width: 2px;
+  background: #d4af37;
 }
 
-.roadmap-step {
+.roadmap-minimal-item {
   position: relative;
   margin-bottom: 70px;
 }
 
-.roadmap-marker {
+.roadmap-minimal-dot {
   position: absolute;
-  left: -90px;
-  top: 5px;
-  width: 60px;
-  height: 60px;
+  left: -70px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: #d4af37;
   border-radius: 50%;
-  background: linear-gradient(145deg,#f3d77a,#c9a227);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: white;
-  font-size: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-.roadmap-content h3 {
+.roadmap-minimal h3 {
   margin: 0 0 6px 0;
   font-size: 22px;
 }
 
-.roadmap-content p {
+.roadmap-minimal p {
   margin: 0;
   color: #6c7a89;
   font-size: 16px;
 }
 
-.roadmap-divider {
-  height: 1px;
-  background: #e4e7eb;
-  margin-top: 25px;
-}
-
 @media(max-width:768px){
-  .roadmap-corp {
-    padding-left: 70px;
+  .roadmap-minimal {
+    padding-left: 55px;
   }
-  .roadmap-marker {
-    left: -70px;
-    width: 50px;
-    height: 50px;
-    font-size: 16px;
+  .roadmap-minimal-dot {
+    left: -55px;
   }
 }
 </style>
@@ -784,43 +767,33 @@ The international PCT patent framework covers genetic engineering methodologies,
 <div class="container">
 <h2>Strategic Development Roadmap</h2>
   
-  <div class="roadmap-corp container">
+  <div class="roadmap-minimal">
 
-  <div class="roadmap-step">
-    <div class="roadmap-marker">I</div>
-    <div class="roadmap-content">
-      <h3>Stage I</h3>
-      <p>Laboratory Validation</p>
-      <div class="roadmap-divider"></div>
-    </div>
+  <div class="roadmap-minimal-item">
+    <div class="roadmap-minimal-dot"></div>
+    <h3>Stage I</h3>
+    <p>Laboratory Validation</p>
   </div>
 
-  <div class="roadmap-step">
-    <div class="roadmap-marker">II</div>
-    <div class="roadmap-content">
-      <h3>Stage II</h3>
-      <p>Preclinical Expansion</p>
-      <div class="roadmap-divider"></div>
-    </div>
+  <div class="roadmap-minimal-item">
+    <div class="roadmap-minimal-dot"></div>
+    <h3>Stage II</h3>
+    <p>Preclinical Expansion</p>
   </div>
 
-  <div class="roadmap-step">
-    <div class="roadmap-marker">III</div>
-    <div class="roadmap-content">
-      <h3>Stage III</h3>
-      <p>GMP Alignment</p>
-      <div class="roadmap-divider"></div>
-    </div>
+  <div class="roadmap-minimal-item">
+    <div class="roadmap-minimal-dot"></div>
+    <h3>Stage III</h3>
+    <p>GMP Alignment</p>
   </div>
 
-  <div class="roadmap-step">
-    <div class="roadmap-marker">IV</div>
-    <div class="roadmap-content">
-      <h3>Stage IV</h3>
-      <p>Clinical Partnership</p>
-    </div>
+  <div class="roadmap-minimal-item">
+    <div class="roadmap-minimal-dot"></div>
+    <h3>Stage IV</h3>
+    <p>Clinical Partnership</p>
   </div>
 
+</div>
 </section>
 </div>
 </div>
