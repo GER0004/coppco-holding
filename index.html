@@ -568,20 +568,19 @@ h2::after{
 }
 
 .pillar-clean h3 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #111;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #0f172a;
   letter-spacing: -0.5px;
 }
 
 .pillar-clean p {
   font-size: 18px;
-  color: #666;
-  margin: 6px 0;
-  line-height: 1.6;
+  color: #64748b;
+  margin: 8px 0;
+  line-height: 1.7;
 }
-
 /* Mobile */
 @media (max-width: 768px) {
   .pillars-grid {
@@ -589,6 +588,21 @@ h2::after{
     gap: 60px;
     padding: 80px 20px;
   }
+}
+  .pillar-clean {
+  position: relative;
+  padding-top: 28px;
+}
+
+.pillar-clean::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #0f172a, transparent);
+  opacity: 0.15;
 }
 </style>
 </head>
