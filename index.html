@@ -163,13 +163,14 @@ padding-top:85px;
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:50px;
+  gap:60px;
 }
 
 .card{
-  background:white;
-  border:1px solid rgba(10,31,60,0.05);
-  box-shadow:0 8px 30px rgba(10,31,60,0.04);
+  background:#ffffff;
+  border:1px solid rgba(10,31,60,0.06);
+  border-radius:16px;
+  padding:40px;
   transition:all 0.3s ease;
 }
 
@@ -387,9 +388,12 @@ h2::after{
   max-height:0;
   overflow:hidden;
   transition:max-height 0.4s ease;
-  margin-top:15px;
 }
-
+  .tech-inner{
+  margin-top:30px;
+  padding-top:30px;
+  border-top:1px solid rgba(10,31,60,0.08);
+}
 .technical-details ul{
   padding-left:18px;
   line-height:1.6;
@@ -509,6 +513,7 @@ A material of structural discipline. High purity and consistency establish indus
 <button class="toggle-btn">View Technical Specifications</button>
 
 <div class="technical-details">
+  <div class="tech-inner">
 
   <p><strong>Nickel Wire 0.025 mm NP1</strong><br>
   High-Purity Grade — 99.978%</p>
@@ -538,6 +543,7 @@ A material of technological conductivity. Ultra-high purity copper enables effic
   <button class="toggle-btn">View Technical Specifications</button>
 
 <div class="technical-details">
+  <div class="tech-inner">
 
   <p><strong>Copper Powder</strong><br>
   Calculated Chemical Purity — 99.9998%</p>
