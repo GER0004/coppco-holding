@@ -745,6 +745,35 @@ h2::after{
 .pillar-clean {
     background: transparent !important;
 }
+  .info-section {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.info-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.info-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+  @media (max-width: 768px) {
+  .info-section {
+    margin: 80px auto;
+  }
+
+  .info-section h2 {
+    font-size: 24px;
+  }
+
+  .info-section p {
+    font-size: 16px;
+  }
+}
 </style>
 </head>
 
@@ -768,37 +797,52 @@ h2::after{
 <section class="metric-strip">
   <div class="container">
 
-    <div class="pillars-grid">
+   <section class="industrial-section">
 
-  <div class="metric-card fade-in">
-    <h3>Industrial Assets</h3>
-    <p>Ultra-Pure Nickel Wire (99.978%)</p>
-<p>High-Purity Copper Powder (99.9998%)</p>
-<p>Independently Verified Specifications</p>
+  <h2>Industrial Assets</h2>
+
+  <div class="asset">
+    <h3>Ultra-Pure Nickel Wire <span>(99.978%)</span></h3>
+    <img src="nickel.jpg" alt="Ultra-Fine Nickel Wire">
   </div>
 
- <div class="metric-card fade-in">
-    <h3>Technology & IP Framework</h3>
-    <p>International Patent Portfolio (PCT Filings)</p>
-<p>RGN-T1™ Recombinant SMP30-Based Platform</p>
-<p>Proprietary Biotechnological Infrastructure</p>
+  <div class="asset">
+    <h3>High-Purity Copper Powder <span>(99.9998%)</span></h3>
+    <img src="copper.jpg" alt="High-Purity Copper Powder">
   </div>
 
- <div class="metric-card fade-in">
-    <h3>Capital Structure</h3>
-   <p>Asset-Backed Capital Model</p>
-<p>Structured Investment Framework</p>
-<p>Risk-Controlled Allocation</p>
-  </div>
+</section>
 
- <div class="metric-card fade-in">
-    <h3>Global Operations</h3>
-    <p>Secured Asset Custody</p>
-<p>Independent Laboratory Verification</p>
-<p>Documented Chain of Ownership</p>
-<p>International Logistics Coordination</p>
-  </div>
+ <section class="info-section">
 
+  <h2>Technology & IP Framework</h2>
+
+  <p>International Patent Portfolio (PCT Filings)</p>
+  <p>RGN-T1™ Recombinant SMP30-Based Platform</p>
+  <p>Proprietary Biotechnological Infrastructure</p>
+
+</section>
+
+ <section class="info-section">
+
+  <h2>Capital Structure</h2>
+
+  <p>Asset-Backed Capital Model</p>
+  <p>Structured Investment Framework</p>
+  <p>Risk-Controlled Allocation</p>
+
+</section>
+
+ <section class="info-section">
+
+  <h2>Global Operations</h2>
+
+  <p>Secured Asset Custody</p>
+  <p>Independent Laboratory Verification</p>
+  <p>Documented Chain of Ownership</p>
+  <p>International Logistics Coordination</p>
+
+</section>
   </div>
 </section>
 
