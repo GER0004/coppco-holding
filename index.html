@@ -883,10 +883,7 @@ h2::after{
 .tech-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
+  display: block;
 }
 
 .tech-text {
@@ -914,11 +911,6 @@ h2::after{
     border-radius: 20px;
 }
 
-@media (max-width: 768px) {
-  .tech-container {
-    flex-direction: column;
-    gap: 40px;
-  }
 
   .tech-image {
     text-align: center;
@@ -928,13 +920,7 @@ h2::after{
   text-align: center;
   margin-top: 40px;
 }
-
-.tech-image img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
+  
 }
   .tech-image {
     width: 100%;
