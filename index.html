@@ -785,7 +785,7 @@ h2::after{
   .asset-caption {
   font-size: 15px;
   color: #4b5563;
-  margin-top: 8px;   /* было больше — уменьшаем */
+  margin-top: 6px;   /* было 12–18, делаем почти вплотную */
   padding-left: 18px;
   position: relative;
 }
@@ -814,7 +814,16 @@ h2::after{
 .asset:last-child {
   border-bottom: none;
 }
-  
+  .asset-caption {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.6s ease;
+}
+
+.asset-caption.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
 </head>
 
@@ -1213,6 +1222,23 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade-in").forEach(el => {
   observer.observe(el);
+});
+</script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const captions = document.querySelectorAll(".asset-caption");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.3 });
+
+  captions.forEach(caption => {
+    observer.observe(caption);
+  });
 });
 </script>
 </body>
