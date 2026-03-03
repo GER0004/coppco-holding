@@ -782,6 +782,38 @@ h2::after{
   margin: 20px 0 60px 0;
   border-radius: 14px;
 }
+  .asset-caption {
+  font-size: 15px;
+  color: #4b5563;
+  margin-top: 18px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.asset-caption::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: 18px;
+  background: #bfa46f;
+  border-radius: 2px;
+}
+
+.muted {
+  font-style: italic;
+  color: #6b7280;
+}
+  .asset {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.asset:last-child {
+  border-bottom: none;
+}
 </style>
 </head>
 
@@ -812,11 +844,17 @@ h2::after{
   <div class="asset">
     <h3>Ultra-Pure Nickel Wire <span>(99.978%)</span></h3>
     <img src="nickel.jpg" alt="Ultra-Fine Nickel Wire">
+    <p class="asset-caption">
+  Ultra-Fine Nickel Wire – 0.025mm (Thinner than Human Hair)
+</p>
   </div>
 
   <div class="asset">
     <h3>High-Purity Copper Powder <span>(99.9998%)</span></h3>
     <img src="copper.jpg" alt="High-Purity Copper Powder">
+    <p class="asset-caption">
+  High-Purity Copper Powder – 99.9998%
+</p>
   </div>
 
 </section>
