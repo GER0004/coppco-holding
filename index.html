@@ -785,7 +785,7 @@ h2::after{
   .asset-caption {
   font-size: 15px;
   color: #4b5563;
-  margin-top: 18px;
+  margin-top: 8px;   /* было больше — уменьшаем */
   padding-left: 18px;
   position: relative;
 }
@@ -806,13 +806,29 @@ h2::after{
   color: #6b7280;
 }
   .asset {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .asset:last-child {
   border-bottom: none;
+}
+  .asset h3 {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.asset h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #bfa46f;
+  border-radius: 2px;
 }
 </style>
 </head>
