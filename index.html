@@ -884,6 +884,53 @@ h2::after{
   }
 
 }
+  .tech-section {
+  padding: 120px 0;
+}
+
+.tech-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.tech-text {
+  flex: 1;
+}
+
+.tech-text h2 {
+  margin-bottom: 30px;
+}
+
+.tech-text p {
+  margin-bottom: 18px;
+}
+
+.tech-image {
+  flex: 1;
+  text-align: right;
+}
+
+.tech-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+  .tech-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tech-image {
+    text-align: center;
+  }
+}
 </style>
 </head>
 
@@ -941,15 +988,25 @@ h2::after{
 
 </div>
   
-  <div class="info-section">
-<div class="container">
-  <h2>Technology & IP Framework</h2>
+  <section class="tech-section">
 
-  <p>International Patent Portfolio (PCT Filings)</p>
-  <p>RGN-T1™ Recombinant SMP30-Based Platform</p>
-  <p>Proprietary Biotechnological Infrastructure</p>
+  <div class="tech-container">
 
-</div>
+    <div class="tech-text">
+      <h2>Technology & IP Framework</h2>
+
+      <p>International Patent Portfolio (PCT Filings)</p>
+      <p>RGN-T1™ Recombinant SMP30-Based Platform</p>
+      <p>Proprietary Biotechnological Infrastructure</p>
+    </div>
+
+    <div class="tech-image">
+      <img src="rgn-t1-dark.png" alt="RGN-T1 Regulina Biotechnology Platform">
+    </div>
+
+  </div>
+
+</section>
 
 <div class="info-section">
 <div class="container">
