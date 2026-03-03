@@ -928,6 +928,31 @@ h2::after{
     width: 100%;
     max-width: 100%;
 }
+  @media (min-width: 992px) {
+
+  .desktop-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .desktop-layout .info-section {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .desktop-layout .tech-section {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .desktop-layout .global-section {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+}
 </style>
 </head>
 
@@ -975,6 +1000,7 @@ h2::after{
 
 </section>
 
+  <div class="desktop-layout">
 <div class="info-section">
 <div class="container">
   <h2>Capital Structure</h2>
@@ -1001,11 +1027,9 @@ h2::after{
     <img src="rgn-t1-dark.png" alt="RGN-T1">
 </div>
 
-  </div>
-
 </section>
 
-<div class="info-section">
+<div class="info-section global-section">
 <div class="container">
   <h2>Global Operations</h2>
 
@@ -1015,8 +1039,9 @@ h2::after{
   <p>International Logistics Coordination</p>
 
   </div>
-
+</div>
 <section>
+  </div>
 <div class="container">
 <h2>Industrial Architecture</h2>
 
