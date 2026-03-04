@@ -935,14 +935,15 @@ margin-top: 0;
     width: 100%;
     max-width: 100%;
 }
-  @media (min-width: 992px) {
+  @media (max-width:768px){
 
-  .desktop-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 120px;
-    align-items: start;
-  }
+.desktop-layout{
+display:flex;
+flex-direction:column;
+gap:60px;
+}
+
+}
 
   .desktop-layout .info-section {
     grid-column: 1;
