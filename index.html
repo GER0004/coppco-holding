@@ -1393,7 +1393,7 @@ T: +44 (0) 20 3535 6471
 </p>
 
 <p style="margin-bottom:30px;">
-E: info@coppcoholding.com
+E: coppcoholding@gmail.com
 </p>
 
 <p style="font-size:14px; color:#64748b;">
@@ -1421,13 +1421,17 @@ Head office location — London, United Kingdom.
 
 <h2 style="margin-bottom:40px;">Strategic Contact</h2>
 
-<form style="max-width:600px;">
+<form id="contact-form" style="max-width:600px;">
 
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Corporate Email">
-<textarea rows="5" placeholder="Inquiry Details"></textarea>
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Corporate Email" required>
+
+<textarea name="message" rows="5" placeholder="Inquiry Details" required></textarea>
 
 <button type="submit">Submit Inquiry</button>
+
+<p id="form-status" style="margin-top:15px;color:#0a1f3c;"></p>
 
 </form>
 
@@ -1504,6 +1508,29 @@ document.addEventListener("DOMContentLoaded", function () {
   captions.forEach(caption => {
     observer.observe(caption);
   });
+});
+</script>
+  <script>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function(e) {
+e.preventDefault();
+
+const data = new FormData(form);
+
+fetch("https://formsubmit.co/ajax/coppcoholding@gmail.com", {
+method: "POST",
+body: data
+})
+.then(response => response.json())
+.then(data => {
+status.innerHTML = "Inquiry sent successfully.";
+form.reset();
+})
+.catch(error => {
+status.innerHTML = "Error sending inquiry.";
+});
 });
 </script>
 </body>
