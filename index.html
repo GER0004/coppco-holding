@@ -1055,7 +1055,20 @@ margin-top:20px !important;
 }
 
 }
+.hero {
+background-size:cover;
+animation:heroMove 20s ease-in-out infinite alternate;
+}
 
+@keyframes heroMove{
+0%{
+background-position:center top;
+}
+
+100%{
+background-position:center bottom;
+}
+}
 </style>
 </head>
 
