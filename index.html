@@ -935,15 +935,14 @@ margin-top: 0;
     width: 100%;
     max-width: 100%;
 }
-  @media (max-width:768px){
+  @media (min-width: 992px) {
 
-.info-section,
-.tech-section,
-.global-section,
-.industrial-section{
-margin-top:60px !important;
-}
-
+  .desktop-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    align-items: start;
+  }
 
   .desktop-layout .info-section {
     grid-column: 1;
@@ -986,7 +985,7 @@ margin-top:60px !important;
 padding:0 20px;
 }
     .industrial-section .container{
-margin-top:0px;
+margin-top:-80px;
 }
 
 .asset{
@@ -1006,7 +1005,6 @@ margin-top:120px;
   .industrial-section{
 transform: translateY(-80px);
 }
-  
 </style>
 </head>
 
